@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SoberPath 下载 · 陪你走出冲动</title>
+<style>
+  :root{
+    --teal:#3CB89F; --teal-dark:#1C7E68; --cream:#F0F5F3; --ink:#1F2A24;
+    --muted:#8a9690; --line:#e6ecea;
+  }
+  *{ box-sizing:border-box; }
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+    color:var(--ink); line-height:1.7; margin:0; background:var(--cream);
+    -webkit-font-smoothing:antialiased;
+  }
+  .card{
+    max-width:460px; margin:0 auto; padding:0 0 40px;
+    background:#fff; min-height:100vh; box-shadow:0 0 40px rgba(31,42,36,.05);
+  }
+  .hero{
+    background:linear-gradient(160deg,var(--teal) 0%,var(--teal-dark) 100%);
+    color:#fff; padding:40px 26px 34px; text-align:center;
+  }
+  .logo{ display:flex; align-items:center; justify-content:center; gap:10px; }
+  .logo svg{ width:34px; height:34px; }
+  .logo .name{ font-size:26px; font-weight:700; letter-spacing:.5px; }
+  .hero h1{ font-size:21px; font-weight:700; margin:18px 0 8px; }
+  .hero p{ font-size:14px; opacity:.92; margin:0 auto; max-width:300px; }
+  .body{ padding:26px 26px 0; }
+  .cta{
+    display:block; text-align:center; text-decoration:none;
+    background:var(--teal-dark); color:#fff; font-size:17px; font-weight:600;
+    padding:15px 20px; border-radius:14px; margin:6px 0 8px;
+    box-shadow:0 8px 20px rgba(28,126,104,.28);
+  }
+  .cta:active{ transform:translateY(1px); }
+  .meta{ text-align:center; font-size:12px; color:var(--muted); margin:0 0 18px; }
+  .ghost{
+    display:block; text-align:center; text-decoration:none; color:var(--teal-dark);
+    font-size:14px; font-weight:600; padding:11px; border:1.5px solid var(--line);
+    border-radius:12px; margin-bottom:24px;
+  }
+  .steps{ margin:0 0 22px; padding:0; list-style:none; counter-reset:s; }
+  .steps li{
+    position:relative; padding:10px 0 10px 40px; font-size:14.5px; color:#33403a;
+    border-bottom:1px solid var(--line);
+  }
+  .steps li:last-child{ border-bottom:none; }
+  .steps li::before{
+    counter-increment:s; content:counter(s);
+    position:absolute; left:0; top:9px; width:26px; height:26px;
+    background:var(--cream); color:var(--teal-dark); border-radius:50%;
+    font-weight:700; font-size:14px; display:flex; align-items:center; justify-content:center;
+  }
+  .note{
+    background:var(--cream); border-left:4px solid var(--teal);
+    padding:12px 14px; border-radius:0 10px 10px 0; font-size:13px; color:#33403a; margin:0 0 26px;
+  }
+  .feats{ display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:26px; }
+  .feat{ background:var(--cream); border-radius:12px; padding:14px; }
+  .feat .t{ font-size:14px; font-weight:700; color:var(--teal-dark); margin-bottom:3px; }
+  .feat .d{ font-size:12.5px; color:#5a6760; }
+  footer{ text-align:center; font-size:12px; color:var(--muted); padding:18px 26px 0; line-height:1.6; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="hero">
+    <div class="logo">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 21c0-5 0-8 0-8m0 0c0-3.5 2.5-6 6-6 0 3.5-2.5 6-6 6zm0 0c0-3.5-2.5-6-6-6 0 3.5 2.5 6 6 6z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="name">SoberPath</span>
+    </div>
+    <h1>陪你稳住每一次冲动</h1>
+    <p>找回清醒的自己 —— 打卡、记录与互助，都在这里。</p>
+  </div>
+
+  <div class="body">
+    <a class="cta" href="https://soberpath.dpdns.org/storage/v1/object/public/downloads/app-release.apk" download>下载 Android 安装包</a>
+    <p class="meta">v1.0.0 · 约 55 MB · 适用于 Android 8.0 及以上</p>
+    <a class="ghost" href="index.html">查看隐私政策</a>
+
+    <ol class="steps">
+      <li>点击上方按钮，下载 <b>app-release.apk</b> 安装包。</li>
+      <li>在系统提示中允许「未知来源」安装（设置 → 安全 → 允许来自此来源的应用）。</li>
+      <li>点击下载完成的文件，按提示完成安装并打开 SoberPath。</li>
+    </ol>
+
+    <div class="note">
+      当前为<b>官网直装版（侧载）</b>，尚未上架应用商店。安装时若系统提示「未知来源」，属正常现象，请放心安装。
+    </div>
+
+    <div class="feats">
+      <div class="feat"><div class="t">连续打卡</div><div class="d">记录每一次清醒，看见坚持的力量。</div></div>
+      <div class="feat"><div class="t">冲动管理</div><div class="d">冲动来袭时，用引导练习稳住自己。</div></div>
+      <div class="feat"><div class="t">互助圈</div><div class="d">和同路人互相陪伴，不再独自扛。</div></div>
+      <div class="feat"><div class="t">隐私守护</div><div class="d">数据加密存储，我们绝不出售你的信息。</div></div>
+    </div>
+
+    <footer>
+      © 2026 SoberPath<br>
+      本应用不提供任何赌博服务，仅用于行为康复与自我管理。
+    </footer>
+  </div>
+</div>
+</body>
+</html>
